@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+     <meta charset="UTF-8">
+     <title> vinalay rony - Familia </title>
+         <style>
+             /* Elimina todos los bordes externos y huecos blancos del navegador */
+             html, body {
+                 margin: 0;
+                 padding: 0;
+                 width: 100%;
+                 min-height: 100vh;
+                 background-color: rgb(140, 190, 233); /* El azul cubre TODA la pantalla */
+                 font-family: sans-serif;
+                 display: flex;
+                 flex-direction: column;
+             }
+
+
+             /* Cabecera de lado a lado */
+             header {
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 background-color: rgb(110, 165, 215); /* Un tono azul un poco más oscuro para contrastar */
+                 padding: 15px 30px;
+                 box-sizing: border-box;
+             }
+
+
+             .logo-pequeno {
+                 width: 50px;
+                 height: auto;
+                 display: block;
+             }
+
+
+             .barra-navegacion {
+                 display: flex;
+                 gap: 15px;
+                 margin-top: 10px;
+             }
+
+
+             .boton-nav {
+                 text-decoration: none;
+                 color: rgb(0, 0, 0);
+                 background-color: rgb(176, 202, 247);
+                 padding: 8px 16px;
+                 border-radius: 4px;
+                 font-size: 14px;
+                 transition: background-color 0.3s;
+             }
+
+
+             .boton-nav:hover {
+                 background-color: rgb(231, 176, 237);
+                 color: white;
+             }
+
+
+             .boton-nav.activo {
+                 background-color: rgb(160, 212, 231); /* Color estático */
+                 color: white;
+                 font-weight: bold;
+             }
+
+
+             /* Contenedor principal que se estira al ancho completo */
+             main {
+                 display: flex;
+                 gap: 30px;
+                 padding: 30px;
+                 box-sizing: border-box;
+                 flex: 1; /* Empuja el footer hacia abajo */
+                 width: 100%;
+             }
+
+
+             /* Columna del anuncio */
+             aside {
+                 width: 25%;
+                 display: flex;
+                 justify-content: center;
+                 align-items: flex-start;
+             }
+
+
+             aside img {
+                 width: 100%;
+                 max-width: 350px;
+                 height: auto;
+                 display: block;
+                 border-radius: 4px;
+             }
+
+
+             /* Columna de la información */
+             section {
+                 width: 75%;
+                 display: flex;
+                 flex-direction: column;
+             }
+
+
+             article {
+                 width: 100%;
+                 background-color: rgb(173, 202, 248); /* El fondo azul de tu tarjeta */
+                 padding: 25px;
+                 border-radius: 6px;
+                 box-sizing: border-box;
+             }
+
+
+             article img {
+                 max-width: 100%;
+                 height: auto;
+                 display: block;
+                 margin-bottom: 20px;
+                 border-radius: 4px;
+             }
+
+
+             /* Pie de página de lado a lado */
+             footer {
+                 background-color: rgb(224, 170, 255);
+                 text-align: center;
+                 padding: 15px;
+                 width: 100%;
+                 box-sizing: border-box;
+             }
+
+
+             footer p {
+                 margin: 0;
+                 font-size: 14px;
+             }
+         </style>
+    </head>  
+    <body>
+        <header>
+            <div>
+                <h1 style="margin:0;">Mi sitio web</h1>
+                <nav class="barra-navegacion">
+                    <a href="index.html" class="boton-nav activo">inicio lana de rey</a>
+                    <a href="vinalay2.html" class="boton-nav">evolucion de lana del rey</a>
+                    <a href="vinalay3.html" class="boton-nav">donde empezo</a>
+                </nav>
+            </div>
+            <img src="lanarosa.jpg" alt="logo de mi sitio web" title="logo de la marca" class="logo-pequeno">
+        </header>
+
+
+        <main>
+            <aside>
+                <img src="dojacat.avif" alt="anuncios">
+            </aside>
+            <section>
+                <article>
+                    <img src="lana_del_rey_1.webp" alt="foto">
+                    <h1>Lana Del Rey</h1>
+                    <p></p>
+                    <ul>
+                    <ul>
+                        <li><strong>Lana Del Rey (Elizabeth):</strong> Su música se distingue por su calidad cinematográfica, su estilo retro y su exploración del romance trágico, el glamur y la melancolía. Con frecuentes referencias a la cultura pop contemporánea y a la época dorada de los años 1950 y 1960 en Estados Unidos. </li>
+                        <li><strong>Lana Del Rey (album ):</strong> El álbum gira mucho alrededor de relaciones complicadas, deseo, dependencia emocional, soledad, nostalgia y una visión oscura del amor. La producción tiene guitarras, reverberación y un ambiente casi hipnótico, muy diferente al pop más accesible de Born to Die.</li>
+
+                    </ul>
+                </article>
+            </section>
+        </main>
+
+
+        <footer>
+            <p>Creado por Vinalay romina</p>
+        </footer>
+    </body>
+</html>
